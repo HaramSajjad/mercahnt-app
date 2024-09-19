@@ -1,0 +1,64 @@
+#home{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+.home-container{
+    padding: 0px 50px;
+    padding-top: 20vh;
+}
+
+.welcome-text{
+    color: white;
+    font-size: 60px;
+}
+
+.welcome-subtitle{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.home-buttons a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    float: left;
+}
+.home-buttons .plan-btn{
+    background-color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+}
+.home-buttons .services-btn{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 500px){
+    .welcome-text{
+        font-size: 40px;
+    }
+
+    .welcome-subtitle{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .home-buttons a{
+        width: 100%;
+    }
+
+}
